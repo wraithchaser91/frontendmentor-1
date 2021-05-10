@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/html-and-css-site-made-in-vsc-with-sass-VPRdNTkw1)
 - Live Site URL: [Netlify](https://dreamy-galileo-4d8ad0.netlify.app/)
 
 ## My process

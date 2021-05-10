@@ -73,15 +73,20 @@ p {
   bottom: 20px;
   text-align: center;
   font-size: 1rem;
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Inter", sans-serif;
 }
 
 .attribution a {
-  color: #3e52a3;
+  color: #7bc67d;
 }
 
 @media screen and (max-width: 375px) {
   .attribution {
     position: relative;
+    left: 0;
+    transform: translate(0);
+    padding: 0 2rem;
   }
 }
 
