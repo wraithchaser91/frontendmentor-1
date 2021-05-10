@@ -1,0 +1,32 @@
+@import
+    "variables",
+    "setup",
+    "typography",
+    "components"
+;
+
+body{
+    @include flex($x-align: center);
+    background-color: $darkBlue;
+    width:100vw;
+    min-height:100vh;
+    overflow-x: hidden;
+}
+
+main{
+    @include flex($direction: row);
+    background-color: $blue;
+    width: $desktopBreakPoint;
+    max-width:80%;
+    border-radius: 8px;
+    overflow: hidden;
+    @include tablet{
+        max-width: 90%;
+    }
+    @include phone{
+        max-width: 90%;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        margin: 4rem 0;
+    }
+}

@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2 {
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h1 span {
+  color: #aa5cdb;
+}
+
+@media screen and (min-width: 375px) and (max-width: 1024px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 375px) and (max-width: 1024px) {
+  h2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  h2 {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 0.3rem;
+  }
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+@media screen and (max-width: 375px) {
+  p {
+    text-align: center;
+  }
+}
+
+.attribution {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media screen and (max-width: 375px) {
+  .attribution {
+    position: relative;
+  }
+}
+
+section {
+  width: 50%;
+}
+
+@media screen and (max-width: 375px) {
+  section {
+    width: 100%;
+  }
+}
+
+#img {
+  position: relative;
+}
+
+#img::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #aa5cdb;
+  opacity: 0.8;
+  mix-blend-mode: multiply;
+}
+
+#img img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 4rem;
+}
+
+#content #bodyText {
+  margin: 2rem 0 4rem;
+  max-width: 45ch;
+  line-height: 1.5rem;
+}
+
+@media screen and (max-width: 375px) {
+  #content #bodyText {
+    margin: 2rem 0;
+  }
+}
+
+#content #stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#content #stats div {
+  margin-right: 5rem;
+}
+
+#content #stats div p {
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+@media screen and (max-width: 375px) {
+  #content #stats div p {
+    letter-spacing: 0.5px;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 1024px) {
+  #content #stats div {
+    margin-right: 3rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #content #stats div {
+    margin-right: 0;
+  }
+  #content #stats div:not(:last-of-type) {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #content #stats {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #content {
+    padding: 2rem 2rem 3rem;
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #090b1a;
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #1b1938;
+  width: 1440px;
+  max-width: 80%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 375px) and (max-width: 1024px) {
+  main {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main {
+    max-width: 90%;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    margin: 4rem 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */
